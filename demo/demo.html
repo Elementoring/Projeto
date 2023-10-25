@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Gestão de Estacionamento</title>
+    <link rel="stylesheet" type="text/css" href="demo.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="navbar-content">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="#">Estacionamento Bom Jesus</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../demo/demo.html">Demonstração</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../servicos/servicos.html">Serviços</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../sobre/sobre.html">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../contato/contato.html">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1>Sistema de Gestão de Estacionamento</h1>
+        <section>
+            <h2>Escolha o Setor</h2>
+            <label for="setorSelecionado">Selecione o Setor:</label>
+            <select id="setorSelecionado" onchange="atualizarVagas()" aria-labelledby="setorSelecionado">
+                <option value="0">Setor A</option>
+                <option value="1">Setor B</option>
+                <option value="2">Setor C</option>
+                <option value="3">Setor D</option>
+                <option value="4">Setor E</option>
+                <option value="5">Setor F</option>
+                <option value="6">Setor G</option>
+                <option value="7">Setor H</option>
+                <option value="8">Setor I</option>
+                <option value="9">Setor J</option>
+            </select>
+        </section>
+
+        <section id="vagasSetor">
+            <!-- As vagas serão preenchidas dinamicamente usando JavaScript -->
+        </section>
+
+        <section>
+            <h2>Registro de Entrada</h2>
+            <div class="registro-entrada-container">
+                <label for="vagasDisponiveis">Vagas Disponíveis:</label>
+                <select id="vagasDisponiveis" aria-labelledby="vagasDisponiveis">
+                    <!-- Opções de vagas disponíveis preenchidas dinamicamente usando JavaScript -->
+                </select>
+                <label for="placa">Número da Placa:</label>
+                <input type="text" id="placa" placeholder="Número da Placa" aria-labelledby="placa">
+                <label for="tipoVeiculo">Tipo de Veículo:</label>
+<select id="tipoVeiculo">
+    <option value="Carro">Carro</option>
+    <option value="Moto">Moto</option>
+    <option value="Van">Van</option>
+</select>
+                <button onclick="registrarEntrada()" aria-label="Registrar Entrada" title="Registrar a entrada de um veículo">
+                    <i class="ion-md-car" alt="Ícone de carro"></i> Registrar Entrada
+                </button>
+                
+            </div>
+        </section>
+
+        <section>
+            <h2>Registro de Saída</h2>
+            <div class="registro-saida-container">
+                <label for="vagasOcupadas">Vagas Ocupadas:</label>
+                <select id="vagasOcupadas" disabled aria-labelledby="vagasOcupadas">
+                    <!-- Opções de vagas ocupadas preenchidas dinamicamente usando JavaScript -->
+                </select>
+                <button onclick="registrarSaida()" aria-label="Registrar Saída" title="Registrar a saída de um veículo">
+                    <i class="ion-md-exit" alt="Ícone de saída"></i> Registrar Saída
+                </button>
+            </div>
+        </section>
+
+        <section>
+            <h2>Tempo Estacionado</h2>
+            <div id="temposEstacionados">
+                <!-- Os tempos estacionados serão preenchidos dinamicamente usando JavaScript -->
+            </div>
+            <button id="reiniciarSistema" onclick="reiniciarSistema()">Reiniciar todo o sistema</button>
+        </section>
+    </main>
+
+    <!-- Relógio no Rodapé -->
+    <footer class="container mt-3">
+        <div class="clock">
+            <div id="clock" class="text-right">Horário: 00:00:00</div>
+             <!-- Exibição em tempo real do relógio na parte inferior da página -->
+        </div>
+        <div class="social-icons">
+            <!-- Ícones de mídia social -->
+            <a href="https://www.facebook.com/estacionamentobomjesus/?locale=pt_BR"><img src="../icons/icons8-facebook-50.png" alt="Facebook"></a>
+            <a href="tel:+551233112083"><img src="../icons/icons8-telefone-50.png" alt="Telefone"></a>
+            <a href="mailto:estacionamentobomjesus374@gmail.com"><img src="../icons/icons8-nova-mensagem-50.png" alt="E-mail"></a>
+        </div>
+        <p>Estacionamento Bom Jesus &copy; 2023</p>
+        <!-- Texto de rodapé com informação de copyright e ano atual -->
+    </footer>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="demo_relogio.js"></script>
+    <script src="demo.js"></script>
+</body>
+</html>

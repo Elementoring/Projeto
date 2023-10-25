@@ -1,0 +1,103 @@
+<!DOCTYPE html> <!-- Declaração de tipo de documento HTML (HTML5) -->
+<html lang="pt-BR"> <!-- Início do documento HTML com linguagem definida como português do Brasil -->
+<head>
+    <meta charset="UTF-8"> <!-- Configura a codificação de caracteres como UTF-8 para suportar caracteres especiais -->
+    <meta http-equiv="X-UA-Compatible" content="IE-edge"> <!-- Configura a compatibilidade com o Internet Explorer -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura a exibição responsiva em dispositivos móveis -->
+    <title>Estacionamento Bom Jesus - Seu Estacionamento de Confiança</title> <!-- Define o título da página que aparecerá na guia do navegador -->
+    <link rel="stylesheet" type="text/css" href="home/home.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Link para um arquivo de estilo externo (Bootstrap) -->
+</head>
+<body>
+    <header class="navbar">
+        <div class="navbar-content">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <!-- Barra de navegação -->
+                <a class="navbar-brand">Estacionamento Bom Jesus</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="demo/demo.html">Demonstração</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="servicos/servicos.html">Serviços</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sobre/sobre.html">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contato/contato.html">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mt-5">
+        <h1>Seu Estacionamento de Confiança</h1>
+        <!-- Título principal da página -->
+
+        <div class="parking-info">
+            <!-- Seção de informações sobre o estacionamento -->
+            <div class="parking-feature">
+                <h2>Estacionamento Seguro</h2>
+                <p>Oferecemos um estacionamento seguro com monitoramento 24 horas por dia e sistema de câmeras de segurança. Seu veículo estará protegido conosco.</p>
+                <img src="img/estacionamento.jpg" alt="Estacionamento Seguro">
+            </div>
+            
+            <div class="parking-feature">
+                <h2>Localização</h2>
+                <p></p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d459.6198432128644!2d-45.22797397072271!3d-22.841015751667012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ccc363c0822453%3A0x1f01b5dcc4cd9a57!2sESTACIONAMENTO%20BOM%20JESUS%20%2F%20APOSTOLADO%20HOTEL%2001%20E%2002!5e0!3m2!1spt-BR!2sbr!4v1698191653119!5m2!1spt-BR!2sbr" width="100%" height="546" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div class="parking-feature">
+                <h2>Facilidade de Pagamento</h2>
+                <p>Aceitamos diversas formas de pagamento, incluindo cartões de crédito e débito. Oferecemos também opções de pagamento mensal para clientes frequentes.</p>
+                <img src="icons/icons8-money-48.png" alt="Facilidade de Pagamento">
+                <img src="icons/icons8-foto-50.png" alt="Facilidade de Pagamento">
+                <img src="icons/icons8-cartão-de-débito-50.png" alt="Facilidade de Pagamento">
+                <h2>Possuímos variedade no método de pagamento:</h2>
+                <ul><li>Dinheiro</li>
+                <li>Pix</li>
+            <li>Cartão de Crédito ou Débito</li></ul>
+            </div>
+        </div>
+
+        <div class="call-to-action">
+            <!-- Botão de ação que redireciona para a página "sobre.html" -->
+        </div>
+    </main>
+
+    <!-- Relógio no Rodapé -->
+    <footer class="container mt-3">
+        <div class="clock">
+            <div id="clock" class="text-right">Horário: 00:00:00</div>
+             <!-- Exibição em tempo real do relógio na parte inferior da página -->
+        </div>
+        <div class="social-icons">
+            <!-- Ícones de mídia social -->
+            <a href="https://www.facebook.com/estacionamentobomjesus/?locale=pt_BR"><img src="icons/icons8-facebook-50.png" alt="Facebook"></a>
+            <a href="tel:+551233112083"><img src="icons/icons8-telefone-50.png" alt="Telefone"></a>
+            <a href="mailto:estacionamentobomjesus374@gmail.com"><img src="icons/icons8-nova-mensagem-50.png" alt="E-mail"></a>
+        </div>
+        <p>Estacionamento Bom Jesus &copy; 2023</p>
+        <!-- Texto de rodapé com informação de copyright e ano atual -->
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Inclusão de scripts, incluindo bibliotecas jQuery e Bootstrap -->
+    <script src="home/home.js">
+    </script>
+</body>
+</html>

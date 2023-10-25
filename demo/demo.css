@@ -1,0 +1,213 @@
+/* Estilos globais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    color: #333;
+    margin-top: 80px;
+}
+
+/* Estilize o cabeçalho */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Estilize o título h1 */
+h1 {
+    font-size: 36px;
+    margin: 30px;
+    padding: 0;
+    text-align: center;
+    color: #000;
+}
+
+/* Container principal */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    color: #333;
+}
+
+/* Estilize cada seção */
+section {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: #333;
+}
+
+/* Estilize os registros de entrada e saída e seletores */
+section:nth-child(3), section:nth-child(4), select, input[type="text"], input[type="email"], input[type="password"] {
+    margin-bottom: 20px;
+    font-size: 18px;
+    padding: 10px;
+    color: #333;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Aumente o tamanho do seletor para melhor usabilidade em dispositivos móveis */
+select {
+    padding: 15px;
+}
+
+/* Estilize os botões de registro */
+button {
+    padding: 15px 30px;
+    font-size: 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    width: auto;
+    margin: 0;
+    background-color: #333;
+    color: #fff;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Estilize o tempo estacionado */
+section:nth-child(5) {
+    margin-bottom: 40px;
+}
+
+/* Estilize as vagas */
+.vaga {
+    width: 120px;
+    height: 120px;
+    border: 2px solid #000;
+    margin: 10px;
+    text-align: center;
+    line-height: 120px;
+    font-weight: bold;
+    display: inline-block;
+    vertical-align: middle;
+    overflow: hidden;
+    background-color: rgba(0, 128, 0, 0.7);
+    transition: background-color 0.3s ease;
+}
+
+/* Estilize vagas ocupadas */
+.vaga.ocupada {
+    background-color: rgba(255, 0, 0, 0.7);
+}
+
+/* Estilize a placa */
+.vaga .placa {
+    font-size: 24px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+/* Estilize o tempo estacionado */
+.vaga .tempo-estacionado {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* Navegação */
+/* Navegação */
+.navbar {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 20px 0;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+    }
+
+    .navbar-content {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    nav ul li {
+        display: inline;
+        margin: 0 15px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    /* Rodapé */
+    footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px 0;
+        position: relative;
+    }
+
+    .clock {
+        background-color: #333;
+        color: #fff;
+        text-align: right;
+        padding: 10px 20px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: 1000;
+    }
+
+    /* Outros estilos do relógio */
+    #clock {
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    .social-icons {
+        margin: 20px 0;
+    }
+
+    .social-icons a {
+        margin: 0 10px;
+    }
+
+    .social-icons img {
+        width: 48px;
+        height: 48px;
+    }
+
+    /* Responsividade */
+    @media screen and (max-width: 768px) {
+        h1 {
+            font-size: 24px;
+        }
+
+        .call-to-action a {
+            font-size: 18px;
+        }
+    }
+
+    /* Adicione um estilo hover aos links */
+    a:hover {
+        text-decoration: underline;
+        color: #555;
+    }
